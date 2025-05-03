@@ -55,6 +55,7 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
+# Sensitive variables
 variable "db_username" {
   description = "Database administrator username"
   type        = string
@@ -66,3 +67,20 @@ variable "db_password" {
   type        = string
   sensitive   = true
 }
+
+# There are two ways of defining secret variables:
+# 1. *.tfvars file
+# 2. Environmental variables in linux
+
+# 1) define variables in *.tfvars, e.g., secret.tfvars
+# db_username = "admin"
+# db_password = "insecurepassword"
+# invoke TF with a parameter, because it is not a standard name for tfvars file
+# terraform apply -var-file="secret.tfvars"
+
+# https://developer.hashicorp.com/terraform/tutorials/configuration-language/sensitive-variables#set-values-with-variables
+# 2) When Terraform runs, it looks in your environment for variables 
+# that match the pattern TF_VAR_<VARIABLE_NAME>, 
+# and assigns those values to the corresponding Terraform variables 
+# in your configuration.
+# export TF_VAR_db_username=admin TF_VAR_db_password=adifferentpassword
