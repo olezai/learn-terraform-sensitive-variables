@@ -1,0 +1,54 @@
+random_string.lb_id: Refreshing state... [id=A1Q]
+module.vpc.aws_vpc.this[0]: Refreshing state... [id=vpc-01b79b293c29dab7a]
+data.aws_availability_zones.available: Reading...
+module.ec2_instances.data.aws_ami.amazon_linux: Reading...
+data.aws_availability_zones.available: Read complete after 0s [id=us-east-1]
+module.vpc.aws_default_route_table.default[0]: Refreshing state... [id=rtb-0830c296f4295fd59]
+module.vpc.aws_default_security_group.this[0]: Refreshing state... [id=sg-0516305920c484d1e]
+module.vpc.aws_default_network_acl.this[0]: Refreshing state... [id=acl-0a3873f370f42cf19]
+module.vpc.aws_subnet.private[1]: Refreshing state... [id=subnet-07d80128ce97e2c6b]
+module.vpc.aws_subnet.private[0]: Refreshing state... [id=subnet-05be8e8dc2b7fdd84]
+module.vpc.aws_internet_gateway.this[0]: Refreshing state... [id=igw-09fc2b3dc30800c99]
+module.vpc.aws_subnet.public[0]: Refreshing state... [id=subnet-0f1bb6693cd72835e]
+module.vpc.aws_subnet.public[1]: Refreshing state... [id=subnet-0c47568ad341ee9f4]
+module.app_security_group.module.sg.aws_security_group.this_name_prefix[0]: Refreshing state... [id=sg-00177f990f16a672e]
+module.ec2_instances.data.aws_ami.amazon_linux: Read complete after 0s [id=ami-097947612b141c026]
+module.vpc.aws_route_table.public[0]: Refreshing state... [id=rtb-0d399606876272013]
+module.lb_security_group.module.sg.aws_security_group.this_name_prefix[0]: Refreshing state... [id=sg-0e919abb33e109a4d]
+module.vpc.aws_route_table.private[0]: Refreshing state... [id=rtb-09247d2d279cdbc36]
+module.vpc.aws_route_table.private[1]: Refreshing state... [id=rtb-0ec854c4c989da550]
+module.vpc.aws_route.public_internet_gateway[0]: Refreshing state... [id=r-rtb-0d3996068762720131080289494]
+module.app_security_group.module.sg.aws_security_group_rule.egress_rules[0]: Refreshing state... [id=sgrule-3502529928]
+module.app_security_group.module.sg.aws_security_group_rule.ingress_with_self[0]: Refreshing state... [id=sgrule-2342851238]
+module.vpc.aws_route_table_association.public[0]: Refreshing state... [id=rtbassoc-09fb2fdf6fb1691a4]
+module.vpc.aws_route_table_association.public[1]: Refreshing state... [id=rtbassoc-06cbba4b4184c252f]
+module.app_security_group.module.sg.aws_security_group_rule.ingress_rules[2]: Refreshing state... [id=sgrule-1960843423]
+module.app_security_group.module.sg.aws_security_group_rule.ingress_rules[0]: Refreshing state... [id=sgrule-2513816639]
+module.app_security_group.module.sg.aws_security_group_rule.ingress_rules[3]: Refreshing state... [id=sgrule-90294794]
+module.app_security_group.module.sg.aws_security_group_rule.ingress_rules[1]: Refreshing state... [id=sgrule-3141464689]
+module.vpc.aws_route_table_association.private[0]: Refreshing state... [id=rtbassoc-0bfbde8dff5d5467e]
+module.vpc.aws_route_table_association.private[1]: Refreshing state... [id=rtbassoc-0c2666c8728d92951]
+aws_db_subnet_group.private: Refreshing state... [id=terraform-20250503134455640300000006]
+module.ec2_instances.aws_instance.app[0]: Refreshing state... [id=i-021ba4ffc4666794a]
+module.ec2_instances.aws_instance.app[1]: Refreshing state... [id=i-0cc8ab8d57c9f4be5]
+module.lb_security_group.module.sg.aws_security_group_rule.ingress_rules[0]: Refreshing state... [id=sgrule-473022212]
+module.lb_security_group.module.sg.aws_security_group_rule.ingress_rules[2]: Refreshing state... [id=sgrule-2576422362]
+module.lb_security_group.module.sg.aws_security_group_rule.ingress_rules[1]: Refreshing state... [id=sgrule-1174477075]
+module.lb_security_group.module.sg.aws_security_group_rule.ingress_rules[3]: Refreshing state... [id=sgrule-4292465471]
+module.lb_security_group.module.sg.aws_security_group_rule.egress_rules[0]: Refreshing state... [id=sgrule-816737192]
+module.lb_security_group.module.sg.aws_security_group_rule.ingress_with_self[0]: Refreshing state... [id=sgrule-3526412739]
+module.elb_http.module.elb.aws_elb.this[0]: Refreshing state... [id=lb-A1Q-project-alpha-dev]
+aws_db_instance.database: Refreshing state... [id=db-4V6Y6KNLR3OS4ZXO3YOLW5RMOA]
+module.elb_http.module.elb_attachment.aws_elb_attachment.this[1]: Refreshing state... [id=lb-A1Q-project-alpha-dev-2025050313450885810000000b]
+module.elb_http.module.elb_attachment.aws_elb_attachment.this[0]: Refreshing state... [id=lb-A1Q-project-alpha-dev-2025050313450885800000000a]
+
+Changes to Outputs:
+  + db_connect_string = (sensitive value)
+
+You can apply this plan to save these new output values to the Terraform
+state, without changing any real infrastructure.
+
+─────────────────────────────────────────────────────────────────────────────
+
+Note: You didn't use the -out option to save this plan, so Terraform can't
+guarantee to take exactly these actions if you run "terraform apply" now.
